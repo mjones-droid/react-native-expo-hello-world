@@ -32,6 +32,7 @@ workflows:
         - team_id: "$BITRISE_TEAM"
         - force_code_sign_identity: "$BITRISE_CODE_SIGNING_IDENTITY"
         - force_provisioning_profile: "$BITRISE_PROFILE_ID"
+        - xcodebuild_options: CODE_SIGN_STYLE="Manual"
         - configuration: Release
     - install-missing-android-tools@2:
         inputs:
